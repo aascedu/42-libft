@@ -21,8 +21,8 @@ static int	ft_whitespace(char c)
 
 int	ft_atoi(const char *str)
 {
-	int		i;
-	int		sign;
+	int				i;
+	int				sign;
 	long long int	number;
 
 	i = 0;
@@ -38,7 +38,7 @@ int	ft_atoi(const char *str)
 	number = 0;
 	while (ft_isdigit(str[i]))
 	{
-		if (number != (number * 10) / 10)
+		if (number != ((number * 10) + (str[i] - 48)) / 10)
 			return ((sign + 1) / -2);
 		number = number * 10 + (str[i] - 48);
 		i++;
