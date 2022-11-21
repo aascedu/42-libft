@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aascedu <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aascedu <aascedu@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 16:41:34 by aascedu           #+#    #+#             */
-/*   Updated: 2022/11/16 15:47:06 by aascedu          ###   ########lyon.fr   */
+/*   Updated: 2022/11/21 09:41:30 by aascedu          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,3 @@ char	*ft_strchr(const char *s, int c)
 	else
 		return ((char *)s + i);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-	char test[] = "teste";
-	
-	printf("%p\n%p\n", ft_strchr(test, 0), strchr(test, 0));
-}*/

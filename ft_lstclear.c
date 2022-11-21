@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aascedu <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aascedu <aascedu@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/15 12:39:07 by aascedu           #+#    #+#             */
-/*   Updated: 2022/11/15 13:30:50 by aascedu          ###   ########lyon.fr   */
+/*   Updated: 2022/11/21 09:52:30 by aascedu          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*temp;
 
-	if (lst == NULL)
+	if (lst == NULL || del == NULL)
 		return ;
 	temp = NULL;
 	while ((*lst) != NULL)

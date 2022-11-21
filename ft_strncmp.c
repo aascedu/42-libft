@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aascedu <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aascedu <aascedu@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 09:32:55 by aascedu           #+#    #+#             */
-/*   Updated: 2022/11/09 12:38:06 by aascedu          ###   ########lyon.fr   */
+/*   Updated: 2022/11/21 09:41:49 by aascedu          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
-/*
-#include <string.h>
-#include <stdio.h>
-int	main(void)
-{
-	char	*c = "\200";
-	printf("%d\n%d\n%c\n", 
-	ft_strncmp("test\200", "test", 6), strncmp("test\200", "test", 6), (char)c);
-}*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aascedu <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aascedu <aascedu@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 14:03:18 by aascedu           #+#    #+#             */
-/*   Updated: 2022/11/09 15:00:01 by aascedu          ###   ########lyon.fr   */
+/*   Updated: 2022/11/21 09:41:54 by aascedu          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,16 +40,3 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*str;
-
-	str = malloc(sizeof(char) * 50);
-	if (!(str = ft_strnstr("lorem ipsum dolor sit amet", "dolor", 15)))
-		printf("NULL\n");
-	else
-		printf("%s\n",str);
-}*/
