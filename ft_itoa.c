@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aascedu <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: aascedu <aascedu@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/10 15:41:47 by aascedu           #+#    #+#             */
-/*   Updated: 2022/11/15 09:18:46 by aascedu          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 08:36:37 by aascedu          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_size(int n, int sign)
+static int	ft_size(int n, int sign)
 {
 	int	i;
 
@@ -27,7 +27,7 @@ int	ft_size(int n, int sign)
 	return (++i);
 }
 
-char	*ft_revstr(char *str)
+static char	*ft_revstr(char *str)
 {
 	int		i;
 	int		size;

@@ -6,13 +6,13 @@
 /*   By: aascedu <aascedu@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/09 14:03:18 by aascedu           #+#    #+#             */
-/*   Updated: 2022/11/21 09:41:54 by aascedu          ###   ########lyon.fr   */
+/*   Updated: 2022/11/22 08:37:28 by aascedu          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_needlematch(const char *haystack, const char *needle, size_t len)
+static int	ft_needlematch(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
 
