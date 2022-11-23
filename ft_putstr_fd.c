@@ -6,7 +6,7 @@
 /*   By: aascedu <aascedu@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 13:47:48 by aascedu           #+#    #+#             */
-/*   Updated: 2022/11/22 08:38:51 by aascedu          ###   ########lyon.fr   */
+/*   Updated: 2022/11/23 09:26:03 by aascedu          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,5 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	int	i;
-
-	i = 0;
-	if (s)
-		while (s[i++])
-			write(fd, &s[i], 1);
+	write(fd, s, ft_strlen(s));
 }
