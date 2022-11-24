@@ -6,7 +6,7 @@
 /*   By: aascedu <aascedu@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/14 13:50:27 by aascedu           #+#    #+#             */
-/*   Updated: 2022/11/23 09:27:36 by aascedu          ###   ########lyon.fr   */
+/*   Updated: 2022/11/24 09:05:47 by aascedu          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	write(fd, s, ft_strlen(s));
+	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }
